@@ -9,11 +9,13 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #87CEFA, #8A2BE2);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .navbar {
+  background-color: rgba(85, 85, 85, 0.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +23,7 @@ body {
   padding: 10px 20px;
   margin: 10px 20px;
   border-radius: 15px 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navbar .logo a {
