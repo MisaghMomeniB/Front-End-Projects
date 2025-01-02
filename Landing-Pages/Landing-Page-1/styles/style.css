@@ -44,3 +44,9 @@ body {
   cursor: pointer;
 }
 
+.hamburger span {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  border-radius: 5px;
+}
