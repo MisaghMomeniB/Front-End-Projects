@@ -23,3 +23,6 @@ body {
   font-weight: bold;
 }
 
+.logo {
+  order: -1;
+}
