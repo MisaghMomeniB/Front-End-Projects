@@ -41,13 +41,35 @@ body {
 }
 
 .nav-links li a {
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 18px;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: blue;
+  color: #ADD8E6;
+}
+
+.nav-links li a::before,
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #ADD8E6;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a::before {
+  transform: translateX(-50%);
+}
+
+.nav-links li a::after {
+  transform: translateX(50%);
 }
 
 .hamburger {
