@@ -50,3 +50,15 @@ body {
   background-color: white;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #333;
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      text-align: center;
+  }
