@@ -36,3 +36,11 @@ body {
 .nav-links li a:hover {
   color: blue;
 }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
