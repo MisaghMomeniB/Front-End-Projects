@@ -8,3 +8,42 @@
 body {
     font-family: 'font1', sans-serif;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
