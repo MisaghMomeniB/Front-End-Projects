@@ -19,7 +19,10 @@ body {
   align-items: center;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(15px);
-  padding: 10px 20px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
 }
 
 .logo {
