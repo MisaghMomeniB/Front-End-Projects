@@ -96,9 +96,10 @@ body {
     text-align: center; /* Center the logo */
   }
 
+  /* Hide navigation links initially, reveal on interaction */
   .nav-links {
     display: none;
-    flex-direction: column;
+    flex-direction: column; /* Stack links vertically */
     gap: 15px;
     width: 100%;
     text-align: center;
