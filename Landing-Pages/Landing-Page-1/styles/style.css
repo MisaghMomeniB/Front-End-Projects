@@ -46,10 +46,11 @@ body {
   transition: all 0.3s ease;
 }
 
+/* Styling for the list of navigation links */
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal layout */
+  gap: 20px; /* Space between links */
   margin-left: 30px;
   padding: 0;
 }
