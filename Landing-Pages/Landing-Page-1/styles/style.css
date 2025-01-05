@@ -17,125 +17,130 @@ body {
 
 /* Navbar styling with flexbox layout and glassmorphism effect */
 .navbar {
-  display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center; /* Vertically center items */
-  background: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
-  padding: 15px 30px;
-  margin: 20px;
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+display: flex;
+justify-content: flex-start; /* Align items to the left */
+align-items: center; /* Vertically center items */
+background: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+padding: 15px 30px;
+margin: 20px;
+border-radius: 12px; /* Rounded corners */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 /* Navbar hover effect for slight interaction feedback */
 .navbar:hover {
-  background: rgba(51, 51, 51, 0.7);
+background: rgba(51, 51, 51, 0.7);
 }
 
 /* Logo styling with golden color and text effects */
 .logo {
-  color: #FFD700; /* Gold color */
-  cursor: default;
-  font-size: 28px;
-  font-weight: bold;
-  text-transform: uppercase; /* Convert text to uppercase */
-  letter-spacing: 3px; /* Space between letters */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px #FFD700, 0 0 5px darkgoldenrod; /* Glow effect */
-  transition: all 0.3s ease;
+color: #FFD700; /* Gold color */
+cursor: default;
+font-size: 28px;
+font-weight: bold;
+text-transform: uppercase; /* Convert text to uppercase */
+letter-spacing: 3px; /* Space between letters */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px #FFD700, 0 0 5px darkgoldenrod; /* Glow effect */
+transition: all 0.3s ease;
 }
 
 /* Styling for the list of navigation links */
 .nav-links {
-  list-style: none; /* Remove bullet points */
-  display: flex; /* Horizontal layout */
-  gap: 20px; /* Space between links */
-  margin-left: 30px;
-  padding: 0;
+list-style: none; /* Remove bullet points */
+display: flex; /* Horizontal layout */
+gap: 20px; /* Space between links */
+margin-left: 30px;
+padding: 0;
 }
 
 /* Ensure list items are displayed inline */
 .nav-links li {
-  display: inline;
+display: inline;
 }
 
 /* Styling for navigation links */
 .nav-links a {
-  text-decoration: none; /* Remove underline */
-  color: #f4f4f4; /* Light text color */
-  padding: 12px 18px;
-  background-color: #333; /* Dark button background */
-  border-radius: 6px; /* Rounded corners */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+text-decoration: none; /* Remove underline */
+color: #f4f4f4; /* Light text color */
+padding: 12px 18px;
+background-color: #333; /* Dark button background */
+border-radius: 6px; /* Rounded corners */
+transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
 /* Change link colors when hovered */
 .nav-links a:hover {
-  background-color: #FFD700; /* Gold background */
-  color: #1a1a1a; /* Dark text */
+background-color: #FFD700; /* Gold background */
+color: #1a1a1a; /* Dark text */
 }
 
 /* Change link colors when active (clicked) */
 .nav-links a:active {
-  background-color: #b88a00; /* Darker gold */
-  color: #1a1a1a;
+background-color: #b88a00; /* Darker gold */
+color: #1a1a1a;
 }
 
 /* Media query for devices with max width of 768px (tablets and smaller screens) */
 @media (max-width: 768px) {
-  .navbar {
-    padding: 10px 20px;
-    margin: 10px;
-    justify-content: space-between; /* Space out logo and links */
-  }
-
-  .logo {
-    font-size: 24px;
-    margin: 0 auto;
-    text-align: center; /* Center the logo */
-  }
-
-  /* Hide navigation links initially, reveal on interaction */
-  .nav-links {
-    display: none;
-    flex-direction: column; /* Stack links vertically */
-    gap: 15px;
-    width: 100%;
-    text-align: center;
-    padding-top: 10px;
-  }
-
-  .nav-links li {
-    display: block;
-  }
-
-  .navbar.active .nav-links {
-    display: flex;
-  }
-
-  .navbar.active .menu-icon {
-    display: block;
-  }
-
-  .menu-icon {
-    display: block;
-    font-size: 30px;
-    color: #FFD700;
-    cursor: pointer;
-  }
+.navbar {
+  padding: 10px 20px;
+  margin: 10px;
+  justify-content: space-between; /* Space out logo and links */
 }
 
+.logo {
+  font-size: 24px;
+  margin: 0 auto;
+  text-align: center; /* Center the logo */
+}
+
+/* Hide navigation links initially, reveal on interaction */
+.nav-links {
+  display: none;
+  flex-direction: column; /* Stack links vertically */
+  gap: 15px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Ensure list items are block elements */
+.nav-links li {
+  display: block;
+}
+
+/* Show nav links when navbar has active class */
+.navbar.active .nav-links {
+  display: flex;
+}
+
+/* Display the menu icon when active */
+.navbar.active .menu-icon {
+  display: block;
+}
+
+/* Styling for the mobile menu icon */
+.menu-icon {
+  display: block;
+  font-size: 30px;
+  color: #FFD700;
+  cursor: pointer;
+}
+}
+
+/* Media query for smaller devices with max width of 480px (phones) */
 @media (max-width: 480px) {
-  .navbar {
-    padding: 8px 15px;
-  }
+.navbar {
+  padding: 8px 15px;
+}
 
-  .logo {
-    font-size: 20px;
-  }
+.logo {
+  font-size: 20px;
+}
 
-  .nav-links {
-    gap: 10px;
-  }
+.nav-links {
+  gap: 10px;
+}
 }
