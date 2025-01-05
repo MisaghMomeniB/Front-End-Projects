@@ -76,11 +76,11 @@ body {
   color: #1a1a1a; /* Dark text */
 }
 
+/* Change link colors when active (clicked) */
 .nav-links a:active {
-  background-color: #b88a00;
+  background-color: #b88a00; /* Darker gold */
   color: #1a1a1a;
 }
-
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
