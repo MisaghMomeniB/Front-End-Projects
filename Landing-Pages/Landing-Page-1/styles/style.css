@@ -29,6 +29,7 @@ body {
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
+/* Navbar hover effect for slight interaction feedback */
 .navbar:hover {
   background: rgba(51, 51, 51, 0.7);
 }
