@@ -55,6 +55,7 @@ body {
   padding: 0;
 }
 
+/* Ensure list items are displayed inline */
 .nav-links li {
   display: inline;
 }
