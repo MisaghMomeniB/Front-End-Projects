@@ -70,9 +70,10 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Change link colors when hovered */
 .nav-links a:hover {
-  background-color: #FFD700;
-  color: #1a1a1a;
+  background-color: #FFD700; /* Gold background */
+  color: #1a1a1a; /* Dark text */
 }
 
 .nav-links a:active {
