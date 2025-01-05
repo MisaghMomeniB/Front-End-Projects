@@ -81,17 +81,19 @@ body {
   background-color: #b88a00; /* Darker gold */
   color: #1a1a1a;
 }
+
+/* Media query for devices with max width of 768px (tablets and smaller screens) */
 @media (max-width: 768px) {
   .navbar {
     padding: 10px 20px;
     margin: 10px;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out logo and links */
   }
 
   .logo {
     font-size: 24px;
     margin: 0 auto;
-    text-align: center;
+    text-align: center; /* Center the logo */
   }
 
   .nav-links {
