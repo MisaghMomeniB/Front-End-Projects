@@ -34,14 +34,15 @@ body {
   background: rgba(51, 51, 51, 0.7);
 }
 
+/* Logo styling with golden color and text effects */
 .logo {
-  color: #FFD700;
+  color: #FFD700; /* Gold color */
   cursor: default;
   font-size: 28px;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px #FFD700, 0 0 5px darkgoldenrod;
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 3px; /* Space between letters */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px #FFD700, 0 0 5px darkgoldenrod; /* Glow effect */
   transition: all 0.3s ease;
 }
 
