@@ -15,17 +15,18 @@ body {
   color: #f4f4f4; /* Light text for contrast */
 }
 
+/* Navbar styling with flexbox layout and glassmorphism effect */
 .navbar {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background: rgba(51, 51, 51, 0.7);
-  backdrop-filter: blur(10px);
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center items */
+  background: rgba(51, 51, 51, 0.7); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
   padding: 15px 30px;
   margin: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-  transition: all 0.3s ease;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Dark shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .navbar:hover {
