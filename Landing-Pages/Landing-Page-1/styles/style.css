@@ -1,8 +1,9 @@
+/* Import a custom font named 'font1' from a specific directory */
 @font-face {
-    font-family: 'font1';
-    src: url('../fonts/PathwayGothicOne-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'font1';
+  src: url('../fonts/PathwayGothicOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
