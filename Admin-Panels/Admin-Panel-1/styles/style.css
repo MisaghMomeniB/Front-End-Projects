@@ -45,3 +45,11 @@ body {
 .sidebar ul li a:hover {
     background-color: #555;
 }
+
+.content {
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(100% - 200px);
+}
