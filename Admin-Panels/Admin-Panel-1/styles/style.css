@@ -53,3 +53,15 @@ body {
     box-sizing: border-box;
     width: calc(100% - 200px);
 }
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
