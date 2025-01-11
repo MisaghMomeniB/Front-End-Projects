@@ -41,3 +41,7 @@ body {
     padding: 10px;
     transition: background-color 0.3s;
 }
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
