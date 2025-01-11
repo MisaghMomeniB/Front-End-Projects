@@ -17,3 +17,14 @@ body {
     position: fixed;
     top: 0;
 }
+
+.sidebar {
+    background-color: #444;
+    color: white;
+    width: 200px;
+    padding-top: 60px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+}
