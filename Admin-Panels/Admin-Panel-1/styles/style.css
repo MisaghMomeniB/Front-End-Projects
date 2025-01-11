@@ -33,3 +33,11 @@ body {
     margin: 20px 0;
     text-align: center;
 }
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
