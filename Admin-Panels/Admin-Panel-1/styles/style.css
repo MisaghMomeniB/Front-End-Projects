@@ -28,3 +28,8 @@ body {
     position: fixed;
     left: 0;
 }
+
+.sidebar ul {
+    margin: 20px 0;
+    text-align: center;
+}
