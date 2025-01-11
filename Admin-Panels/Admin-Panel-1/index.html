@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Admin Panels</title>
 </head>
 <body>
     <div class="admin-panel">
@@ -15,13 +15,21 @@
             <ul>
                 <li><a href="#" id="dashboard-link">Dashboard</a></li>
                 <li><a href="#" id="users-link">Users</a></li>
-                <li><a href="#" id="settings">Settings</a></li>
+                <li><a href="#" id="settings-link">Settings</a></li>
             </ul>
         </aside>
         <main class="content">
             <div id="dashboard" class="tab">
                 <h2>Dashboard</h2>
-                <p>Welcome to The Dashboard.</p>
+                <p>Welcome to the dashboard.</p>
+            </div>
+            <div id="users" class="tab hidden">
+                <h2>Users</h2>
+                <p>Manage your users here.</p>
+            </div>
+            <div id="settings" class="tab hidden">
+                <h2>Settings</h2>
+                <p>Configure your settings here.</p>
             </div>
         </main>
     </div>
