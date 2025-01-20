@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     links.forEach(link => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
-            const tabId = link.id.split("-")[0];
+            const tabId = link.dataset.tab;
             activateTab(tabId);
             activateTabLink(tabId);  // Activate tab link
         });
