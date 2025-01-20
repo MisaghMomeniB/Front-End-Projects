@@ -116,16 +116,16 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 button:hover {
-    transform: scale(1.1);
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    background: #5a72e1;  /* Change color on hover */
 }
 
 button:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* For when the button is clicked */
 }
 
 /* Form Styling */
