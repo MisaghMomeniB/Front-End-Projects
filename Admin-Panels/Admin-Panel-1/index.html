@@ -1,70 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>  <!-- Declares the document type as HTML5 -->
+<html lang="en">  <!-- Starts the HTML document, specifying that the language is English -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="images/favicon.ico">
+    <meta charset="UTF-8">  <!-- Specifies the character encoding for the document (UTF-8) to support a wide range of characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensures proper scaling of the page on different devices (mobile responsiveness) -->
+    <title>Admin Panel</title>  <!-- The title of the page, shown in the browser tab -->
+    <link rel="stylesheet" href="styles/style.css">  <!-- Links to the external CSS file (style.css) for styling the page -->
+    <link rel="icon" href="images/favicon.ico">  <!-- Links to the favicon (the icon displayed in the browser tab) -->
 </head>
 <body>
-    <div class="admin-panel">
-        <div class="header">Admin Panel Dashboard</div>
+    <!-- The body section of the page -->
+
+    <div class="admin-panel">  <!-- Main container for the admin panel layout -->
+        <!-- Header section of the admin panel -->
+        <div class="header">Admin Panel Dashboard</div>  <!-- Displays the title "Admin Panel Dashboard" at the top of the page -->
+
+        <!-- Sidebar section containing navigation links -->
         <div class="sidebar">
-            <ul>
-                <li><a href="#" class="tab-link active" data-tab="dashboard">Dashboard</a></li>
-                <li><a href="#" class="tab-link" data-tab="settings">Settings</a></li>
-                <li><a href="#" class="tab-link" data-tab="profile">Profile</a></li>
-                <li><a href="#" class="tab-link" data-tab="notifications">Notifications</a></li>
-                <li><a href="#" class="tab-link" data-tab="analytics">Analytics</a></li>
+            <ul>  <!-- Unordered list for navigation items -->
+                <!-- List items representing different tabs -->
+                <li><a href="#" class="tab-link active" data-tab="dashboard">Dashboard</a></li>  <!-- First navigation link, currently active, links to the "Dashboard" tab -->
+                <li><a href="#" class="tab-link" data-tab="settings">Settings</a></li>  <!-- Second navigation link for "Settings" -->
+                <li><a href="#" class="tab-link" data-tab="profile">Profile</a></li>  <!-- Third navigation link for "Profile" -->
+                <li><a href="#" class="tab-link" data-tab="notifications">Notifications</a></li>  <!-- Fourth navigation link for "Notifications" -->
+                <li><a href="#" class="tab-link" data-tab="analytics">Analytics</a></li>  <!-- Fifth navigation link for "Analytics" -->
             </ul>
         </div>
+
+        <!-- Main content area of the admin panel -->
         <div class="content">
+            <!-- Tab content for the "Dashboard" section -->
             <div class="tab active" id="dashboard">
-                <h1>Welcome to the Dashboard</h1>
-                <p>This is your dashboard overview.</p>
-                <button>Generate Report</button>
+                <h1>Welcome to the Dashboard</h1>  <!-- Header for the "Dashboard" tab -->
+                <p>This is your dashboard overview.</p>  <!-- Descriptive paragraph for the dashboard -->
+                <button>Generate Report</button>  <!-- A button to generate a report (functionality not implemented yet) -->
             </div>
+
+            <!-- Tab content for the "Settings" section -->
             <div class="tab" id="settings">
-                <h1>Settings</h1>
-                <p>Adjust your preferences here.</p>
-                <form>
-                    <label for="theme">Choose Theme:</label>
-                    <select id="theme">
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
+                <h1>Settings</h1>  <!-- Header for the "Settings" tab -->
+                <p>Adjust your preferences here.</p>  <!-- Descriptive paragraph for the settings -->
+                <form>  <!-- Form to adjust settings -->
+                    <label for="theme">Choose Theme:</label>  <!-- Label for the theme selection dropdown -->
+                    <select id="theme">  <!-- Dropdown menu to select theme -->
+                        <option value="light">Light</option>  <!-- Option to select "Light" theme -->
+                        <option value="dark">Dark</option>  <!-- Option to select "Dark" theme -->
                     </select>
-                    <button type="submit">Save Settings</button>
+                    <button type="submit">Save Settings</button>  <!-- Submit button to save the settings -->
                 </form>
             </div>
+
+            <!-- Tab content for the "Profile" section -->
             <div class="tab" id="profile">
-                <h1>Profile</h1>
-                <p>Update your personal information here.</p>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name" />
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email" />
-                    <button type="submit">Update Profile</button>
+                <h1>Profile</h1>  <!-- Header for the "Profile" tab -->
+                <p>Update your personal information here.</p>  <!-- Descriptive paragraph for profile settings -->
+                <form>  <!-- Form to update personal information -->
+                    <label for="name">Name:</label>  <!-- Label for the name input field -->
+                    <input type="text" id="name" placeholder="Enter your name" />  <!-- Input field for entering the name -->
+                    <label for="email">Email:</label>  <!-- Label for the email input field -->
+                    <input type="email" id="email" placeholder="Enter your email" />  <!-- Input field for entering the email -->
+                    <button type="submit">Update Profile</button>  <!-- Submit button to update the profile -->
                 </form>
             </div>
+
+            <!-- Tab content for the "Notifications" section -->
             <div class="tab" id="notifications">
-                <h1>Notifications</h1>
-                <p>View your latest notifications.</p>
-                <ul>
-                    <li>New user registered.</li>
-                    <li>Server backup completed.</li>
+                <h1>Notifications</h1>  <!-- Header for the "Notifications" tab -->
+                <p>View your latest notifications.</p>  <!-- Descriptive paragraph for the notifications section -->
+                <ul>  <!-- Unordered list of notifications -->
+                    <li>New user registered.</li>  <!-- First notification -->
+                    <li>Server backup completed.</li>  <!-- Second notification -->
                 </ul>
             </div>
+
+            <!-- Tab content for the "Analytics" section -->
             <div class="tab" id="analytics">
-                <h1>Analytics</h1>
-                <p>View your site's analytics data here.</p>
+                <h1>Analytics</h1>  <!-- Header for the "Analytics" tab -->
+                <p>View your site's analytics data here.</p>  <!-- Descriptive paragraph for analytics section -->
                 <div class="chart">
-                    <p>Graph placeholder.</p>
+                    <p>Graph placeholder.</p>  <!-- Placeholder text for a graph or chart -->
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Linking to the external JavaScript file (script.js) for dynamic functionality -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
