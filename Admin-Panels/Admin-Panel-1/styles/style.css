@@ -1,160 +1,178 @@
+/* Font face definition */
 @font-face {
-    font-family: font;
-    src: url(/Admin-Panels/Admin-Panel-1/fonts/ttf/Vazirmatn-Bold.ttf);
+    font-family: font;  /* Define a custom font-family name */
+    src: url(/Admin-Panels/Admin-Panel-1/fonts/ttf/Vazirmatn-Bold.ttf);  /* Specify the source path for the font file */
 }
 
+/* General body styling */
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'font';
-    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
-    color: #333;
-    line-height: 1.6;
-    overflow-x: hidden;
+    padding: 0;  /* Remove padding from the body */
+    margin: 0;  /* Remove margin from the body */
+    font-family: 'font';  /* Apply the custom font family defined above */
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);  /* Set a background gradient from light gray to a blueish tint */
+    color: #333;  /* Set the text color to a dark gray */
+    line-height: 1.6;  /* Set line height to 1.6 for better readability */
+    overflow-x: hidden;  /* Hide horizontal scrolling */
 }
 
+/* Admin panel container */
 .admin-panel {
-    display: flex;
-    height: 100vh;
+    display: flex;  /* Use flexbox to create a flexible layout */
+    height: 100vh;  /* Set the height to 100% of the viewport height */
 }
 
+/* Header styling */
 .header {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    font-size: 24px;
-    font-weight: bold;
-    z-index: 1000;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);  /* Apply a gradient background with blue and purple colors */
+    color: white;  /* Set text color to white */
+    text-align: center;  /* Center the text horizontally */
+    padding: 15px 0;  /* Add padding to the top and bottom */
+    width: 100%;  /* Set the width to 100% to fill the container */
+    position: fixed;  /* Fix the header at the top of the page */
+    top: 0;  /* Position the header at the top of the viewport */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  /* Add a slight shadow for the header */
+    font-size: 24px;  /* Set the font size to 24px */
+    font-weight: bold;  /* Make the text bold */
+    z-index: 1000;  /* Ensure the header stays on top of other elements */
 }
 
+/* Sidebar styling */
 .sidebar {
-    background: #2b2f3e;
-    color: white;
-    width: 220px;
-    padding-top: 80px;
-    height: 100vh;
-    box-sizing: border-box;
-    position: fixed;
-    left: 0;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    background: #2b2f3e;  /* Set a dark gray color for the sidebar */
+    color: white;  /* Set text color to white */
+    width: 220px;  /* Set the width of the sidebar */
+    padding-top: 80px;  /* Add padding at the top to avoid overlapping with the header */
+    height: 100vh;  /* Set the height to 100% of the viewport height */
+    box-sizing: border-box;  /* Include padding and borders in the element's total width and height */
+    position: fixed;  /* Fix the sidebar to the left of the viewport */
+    left: 0;  /* Position the sidebar to the left */
+    transition: transform 0.3s ease-in-out;  /* Add smooth transition effects for any transformations */
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);  /* Add a shadow to the right side of the sidebar */
 }
 
+/* Sidebar links styling */
 .sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin: 0;  /* Remove the margin */
+    padding: 0;  /* Remove the padding */
+    list-style: none;  /* Remove list bullets */
 }
 
 .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 12px 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border-radius: 8px;
-    margin: 5px 15px;
+    color: white;  /* Set link text color to white */
+    text-decoration: none;  /* Remove the underline from links */
+    display: block;  /* Make links block-level elements so they span the entire width */
+    padding: 12px 10px;  /* Add padding to the links */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Add smooth transitions for background color and transform */
+    border-radius: 8px;  /* Round the corners of the links */
+    margin: 5px 15px;  /* Add margin for spacing between links */
 }
 
+/* Sidebar link hover effect */
 .sidebar ul li a:hover {
-    background: #6e8efb;
-    transform: translateX(5px);
+    background: #6e8efb;  /* Change the background color to a blue shade on hover */
+    transform: translateX(5px);  /* Move the link slightly to the right */
 }
 
+/* Content area styling */
 .content {
-    margin-left: 220px;
-    margin-top: 80px;
-    padding: 30px;
-    box-sizing: border-box;
-    width: calc(100% - 220px);
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    animation: fadeIn 1s ease-in-out;
+    margin-left: 220px;  /* Offset the content area to the right of the sidebar */
+    margin-top: 80px;  /* Offset the content area below the header */
+    padding: 30px;  /* Add padding inside the content area */
+    box-sizing: border-box;  /* Include padding and borders in the element's total width and height */
+    width: calc(100% - 220px);  /* Make the content area take up the remaining width (100% - sidebar width) */
+    background: white;  /* Set a white background for the content */
+    border-radius: 12px;  /* Round the corners of the content area */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);  /* Add a shadow around the content area */
+    animation: fadeIn 1s ease-in-out;  /* Apply a fade-in animation when the content is displayed */
 }
 
+/* Tab styling */
 .tab {
-    display: none;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: none;  /* Hide the tab content by default */
+    opacity: 0;  /* Make the tab content transparent */
+    transform: translateY(20px);  /* Move the tab content slightly down */
+    transition: opacity 0.5s ease, transform 0.5s ease;  /* Smooth transitions for opacity and transform */
 }
 
+/* Active tab styling */
 .tab.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
+    display: block;  /* Display the active tab */
+    opacity: 1;  /* Make the active tab fully opaque */
+    transform: translateY(0);  /* Reset the tab's position to its original state */
 }
 
+/* Hidden class to hide elements */
 .hidden {
-    display: none;
+    display: none;  /* Hide elements with the "hidden" class */
 }
 
+/* Fade-in animation for the content */
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        opacity: 0;  /* Start with opacity 0 */
+        transform: translateY(20px);  /* Start with the tab slightly lower */
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1;  /* End with opacity 1 */
+        transform: translateY(0);  /* End with the tab in its normal position */
     }
 }
 
-/* Button Styling */
+/* Button styling */
 button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: box-shadow 0.3s ease;
+    padding: 12px 24px;  /* Add padding inside the button */
+    border: none;  /* Remove the border */
+    border-radius: 25px;  /* Make the button's corners rounded */
+    background: linear-gradient(135deg, #6e8efb, #a777e3);  /* Apply a gradient background */
+    color: white;  /* Set the text color to white */
+    cursor: pointer;  /* Change the cursor to a pointer on hover */
+    font-size: 16px;  /* Set the font size */
+    font-weight: bold;  /* Make the text bold */
+    transition: box-shadow 0.3s ease;  /* Add a transition effect for the box-shadow on hover */
 }
 
+/* Button hover effect */
 button:hover {
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    background: #5a72e1;  /* Change color on hover */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);  /* Add a shadow when the button is hovered */
+    background: #5a72e1;  /* Change the background color on hover */
 }
 
+/* Button active state (when clicked) */
 button:active {
-    transform: scale(0.95); /* For when the button is clicked */
+    transform: scale(0.95);  /* Slightly shrink the button when clicked */
 }
 
-/* Form Styling */
+/* Form styling */
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex;  /* Use flexbox for the form layout */
+    flex-direction: column;  /* Stack the form elements vertically */
 }
 
+/* Form input, select, and button styling */
 form input, form select, form button {
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    margin: 10px 0;  /* Add vertical margin between elements */
+    padding: 10px;  /* Add padding inside the form elements */
+    font-size: 16px;  /* Set font size */
+    border: 1px solid #ccc;  /* Add a light border around form elements */
+    border-radius: 8px;  /* Round the corners of form elements */
 }
 
+/* Form button specific styling */
 form button {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
-    cursor: pointer;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);  /* Apply a gradient background */
+    color: white;  /* Set text color to white */
+    cursor: pointer;  /* Change cursor to pointer on hover */
 }
 
+/* Form button hover effect */
 form button:hover {
-    background: #5a72e1;
+    background: #5a72e1;  /* Change the background color on hover */
 }
 
+/* Chart container styling */
 .chart {
-    background-color: #f0f4f8;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #f0f4f8;  /* Set the background color to light grayish-blue */
+    padding: 20px;  /* Add padding inside the chart container */
+    border-radius: 8px;  /* Round the corners of the chart container */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Add a subtle shadow to the chart container */
 }
