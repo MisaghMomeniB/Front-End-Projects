@@ -282,3 +282,52 @@ color: #1a1a1a;
   max-width: 500px;
   margin: 0 auto;
 }
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact button {
+  padding: 12px 20px;
+  background: #FFD700;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background: #b88a00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
