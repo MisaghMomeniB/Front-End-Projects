@@ -168,3 +168,41 @@ color: #1a1a1a;
   max-width: 600px;
   line-height: 1.5;
 }
+
+.hero .btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  background: #FFD700;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #b88a00;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.about img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background: #333;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
