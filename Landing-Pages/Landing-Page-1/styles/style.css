@@ -234,3 +234,51 @@ color: #1a1a1a;
   text-align: center;
   background: #1a1a1a;
 }
+
+.testimonial-item {
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.testimonial-item span {
+  display: block;
+  margin-top: 10px;
+  color: #FFD700;
+}
+
+/* Team Section */
+.team {
+  padding: 50px 20px;
+  background: #333;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.team-member {
+  text-align: center;
+  width: 200px;
+}
+
+.team-member img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
