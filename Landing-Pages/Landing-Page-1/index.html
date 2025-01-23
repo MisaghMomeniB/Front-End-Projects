@@ -1,108 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This is the start of the HTML document. 'lang="en"' specifies the language of the page is English. -->
 <head>
   <meta charset="UTF-8">
+  <!-- This meta tag specifies the character encoding for the document to be UTF-8, which supports all characters. -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This meta tag ensures that the webpage is responsive by setting the width of the page to the width of the device and the initial zoom level to 1. -->
   <link rel="stylesheet" href="./styles/style.css">
+  <!-- This links to an external CSS file 'style.css' that will be used for styling the page. -->
   <title>Landing Pages</title>
+  <!-- This sets the title of the webpage, which appears in the browser tab. -->
 </head>
+
 <body>
-  
+  <!-- This is the main body of the webpage, where all visible content is placed. -->
+
   <header class="navbar">
+    <!-- The header section, often used for the website's navigation bar. -->
     <div class="logo">MyLogo</div>
+    <!-- The logo section of the website, containing the text 'MyLogo'. -->
     <nav>
       <ul class="nav-links">
+        <!-- A navigation menu, wrapped in an unordered list with the class 'nav-links'. -->
         <li><a href="#home">Home</a></li>
+        <!-- The 'Home' link that directs the user to the 'home' section on the page. -->
         <li><a href="#about">About</a></li>
+        <!-- The 'About' link that directs the user to the 'about' section on the page. -->
         <li><a href="#services">Services</a></li>
+        <!-- The 'Services' link that directs the user to the 'services' section on the page. -->
         <li><a href="#contact">Contact</a></li>
+        <!-- The 'Contact' link that directs the user to the 'contact' section on the page. -->
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
+    <!-- The hero section, typically used as an introduction to the website. -->
     <div class="hero-content">
+      <!-- A div container for the content inside the hero section. -->
       <h1>Welcome to My Website</h1>
+      <!-- The main heading of the hero section. -->
       <p>We offer amazing services to help your business grow.</p>
+      <!-- A paragraph introducing the services offered. -->
       <a href="#services" class="btn">Learn More</a>
+      <!-- A button that links to the 'services' section. -->
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
+    <!-- The about section where the company or website is introduced. -->
     <h2>About Us</h2>
+    <!-- A heading for the 'About Us' section. -->
     <p>We are a team of dedicated professionals committed to excellence in every project.</p>
+    <!-- A paragraph describing the team or company. -->
     <img src="./images/about-us.jpg" alt="About Us">
+    <!-- An image that represents the 'About Us' section, with the alternative text 'About Us' for accessibility. -->
   </section>
 
   <!-- Services Section -->
   <section id="services" class="services">
+    <!-- The services section where the different services offered are listed. -->
     <h2>Our Services</h2>
+    <!-- A heading for the 'Our Services' section. -->
     <div class="service-list">
+      <!-- A div container for the list of services. -->
       <div class="service-item">
+        <!-- A div for each individual service offered. -->
         <h3>Web Development</h3>
+        <!-- The heading for the 'Web Development' service. -->
         <p>Build modern and responsive websites.</p>
+        <!-- A description of the 'Web Development' service. -->
       </div>
       <div class="service-item">
+        <!-- Another service item. -->
         <h3>Marketing</h3>
+        <!-- The heading for the 'Marketing' service. -->
         <p>Grow your audience with strategic campaigns.</p>
+        <!-- A description of the 'Marketing' service. -->
       </div>
       <div class="service-item">
+        <!-- Another service item. -->
         <h3>Consulting</h3>
+        <!-- The heading for the 'Consulting' service. -->
         <p>Get expert advice to scale your business.</p>
+        <!-- A description of the 'Consulting' service. -->
       </div>
     </div>
   </section>
 
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials">
+    <!-- The testimonials section where client feedback is displayed. -->
     <h2>What Our Clients Say</h2>
+    <!-- A heading for the 'What Our Clients Say' section. -->
     <div class="testimonial-list">
+      <!-- A div container for the list of testimonials. -->
       <div class="testimonial-item">
+        <!-- A div for an individual testimonial. -->
         <p>"This company transformed our business. Highly recommend!"</p>
+        <!-- The actual testimonial text. -->
         <span>- John Doe</span>
+        <!-- The name of the client who provided the testimonial. -->
       </div>
       <div class="testimonial-item">
+        <!-- Another testimonial item. -->
         <p>"Exceptional service and fantastic results."</p>
+        <!-- The actual testimonial text. -->
         <span>- Jane Smith</span>
+        <!-- The name of the client who provided the testimonial. -->
       </div>
     </div>
   </section>
 
   <!-- Team Section -->
   <section id="team" class="team">
+    <!-- The team section where the company team members are introduced. -->
     <h2>Meet the Team</h2>
+    <!-- A heading for the 'Meet the Team' section. -->
     <div class="team-members">
+      <!-- A div container for the team members. -->
       <div class="team-member">
+        <!-- A div for an individual team member. -->
         <img src="./images/team1.jpg" alt="Team Member 1">
+        <!-- An image of the team member. -->
         <h3>Sarah Connor</h3>
+        <!-- The name of the team member. -->
         <p>CEO</p>
+        <!-- The role of the team member. -->
       </div>
       <div class="team-member">
+        <!-- Another team member. -->
         <img src="./images/team2.jpg" alt="Team Member 2">
+        <!-- An image of the second team member. -->
         <h3>John Carter</h3>
+        <!-- The name of the second team member. -->
         <p>CTO</p>
+        <!-- The role of the second team member. -->
       </div>
       <div class="team-member">
+        <!-- Another team member. -->
         <img src="./images/team3.jpg" alt="Team Member 3">
+        <!-- An image of the third team member. -->
         <h3>Emily Brown</h3>
+        <!-- The name of the third team member. -->
         <p>Marketing Head</p>
+        <!-- The role of the third team member. -->
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
+    <!-- The contact section where users can send a message. -->
     <h2>Contact Us</h2>
+    <!-- A heading for the 'Contact Us' section. -->
     <form action="#" method="POST">
+      <!-- The contact form where users can input their details. -->
       <input type="text" name="name" placeholder="Your Name" required>
+      <!-- A text input for the user's name. The 'required' attribute makes it mandatory. -->
       <input type="email" name="email" placeholder="Your Email" required>
+      <!-- A text input for the user's email. The 'required' attribute makes it mandatory. -->
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <!-- A textarea for the user to write their message. The 'required' attribute makes it mandatory. -->
       <button type="submit" class="btn">Send Message</button>
+      <!-- A submit button for sending the form. -->
     </form>
   </section>
 
   <script src="./scripts/script.js"></script>
+  <!-- This links to an external JavaScript file 'script.js', which can be used for additional functionality or interactivity. -->
+
 </body>
 </html>
