@@ -204,3 +204,221 @@ button:hover {
         transform: translateY(0);
     }
 }
+
+/* Sidebar styling */
+.sidebar {
+    background: #2b2f3e;  /* Dark gray background */
+    color: white;  /* Text color */
+    width: 220px;  /* Sidebar width */
+    padding-top: 80px;  /* Padding from top */
+    height: 100vh;  /* Full viewport height */
+    position: fixed;  /* Fix position */
+    left: 0;  /* Align to left */
+    transition: transform 0.3s ease-in-out;  /* Smooth transitions */
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);  /* Add shadow */
+    animation: slideInSidebar 0.8s ease-out;
+}
+
+@keyframes slideInSidebar {
+    from {
+        transform: translateX(-220px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Sidebar links styling */
+.sidebar ul {
+    margin: 0;  /* Remove margin */
+    padding: 0;  /* Remove padding */
+    list-style: none;  /* No bullets */
+}
+
+.sidebar ul li a {
+    color: white;  /* Text color */
+    text-decoration: none;  /* Remove underline */
+    display: block;  /* Block level links */
+    padding: 12px 10px;  /* Padding */
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth hover effects */
+    border-radius: 8px;  /* Rounded corners */
+    margin: 5px 15px;  /* Spacing */
+}
+
+/* Sidebar link hover effect */
+.sidebar ul li a:hover {
+    background: #6e8efb;  /* Blue shade */
+    transform: translateX(5px);  /* Move slightly right */
+    box-shadow: 0 4px 8px rgba(110, 142, 251, 0.3);
+}
+
+/* Content area styling */
+.content {
+    margin-left: 220px;  /* Offset for sidebar */
+    margin-top: 80px;  /* Offset for header */
+    padding: 30px;  /* Padding */
+    box-sizing: border-box;  /* Include padding */
+    width: calc(100% - 220px);  /* Remaining width */
+    background: white;  /* White background */
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);  /* Add shadow */
+    animation: fadeInContent 1s ease-in-out;
+}
+
+@keyframes fadeInContent {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tab styling */
+.tab {
+    display: none;  /* Hidden by default */
+    opacity: 0;  /* Transparent */
+    transform: translateY(20px);  /* Downward offset */
+    transition: opacity 0.5s ease, transform 0.5s ease;  /* Smooth transitions */
+}
+
+.tab.active {
+    display: block;  /* Show active tab */
+    opacity: 1;  /* Fully opaque */
+    transform: translateY(0);  /* Reset position */
+}
+
+/* Button styling */
+button {
+    padding: 12px 24px;  /* Padding */
+    border: none;  /* No border */
+    border-radius: 25px;  /* Rounded corners */
+    background: linear-gradient(135deg, #6e8efb, #a777e3);  /* Gradient background */
+    color: white;  /* Text color */
+    cursor: pointer;  /* Pointer cursor */
+    font-size: 16px;  /* Font size */
+    font-weight: bold;  /* Bold text */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;  /* Smooth hover effects */
+    animation: fadeInButton 0.8s ease-in-out;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Button hover effect */
+button:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);  /* Shadow */
+    background: #5a72e1;  /* Darker blue */
+    transform: scale(1.05);  /* Slightly larger */
+}
+
+/* Chart container styling */
+.chart {
+    background-color: #f0f4f8;  /* Light background */
+    padding: 20px;  /* Padding */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Shadow */
+    animation: fadeInChart 1s ease-in-out;
+}
+
+@keyframes fadeInChart {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alerts Section */
+.alerts {
+    position: fixed;  /* Fixed at the bottom */
+    bottom: 20px;  /* 20px from the bottom */
+    left: 20px;  /* 20px from the left */
+    z-index: 999;  /* Keep on top */
+    width: auto;
+}
+
+.alert {
+    background-color: #4CAF50;  /* Green background for success */
+    color: white;  /* White text */
+    padding: 15px;  /* Padding */
+    margin: 10px 0;  /* Spacing between alerts */
+    border-radius: 5px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);  /* Shadow */
+    opacity: 0;  /* Initially hidden */
+    animation: fadeInAlert 1s ease-in-out forwards;  /* Fade in animation */
+}
+
+/* Alert error styling */
+.alert-error {
+    background-color: #f44336;  /* Red background for error */
+}
+
+/* Alert success animation */
+@keyframes fadeInAlert {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Search Bar */
+.search-bar {
+    position: fixed;  /* Fixed at the top */
+    top: 60px;  /* 60px from the top */
+    right: 20px;  /* 20px from the right */
+    z-index: 1000;  /* Keep on top */
+    background: white;  /* White background */
+    padding: 10px;  /* Padding */
+    border-radius: 25px;  /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);  /* Shadow */
+}
+
+.search-bar input {
+    padding: 8px 12px;  /* Padding */
+    border-radius: 20px;  /* Rounded corners */
+    border: 1px solid #ccc;  /* Light gray border */
+}
+
+.search-bar button {
+    background-color: #6e8efb;  /* Blue background */
+    color: white;  /* White text */
+    padding: 8px 16px;  /* Padding */
+    border: none;  /* No border */
+    border-radius: 20px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor */
+    margin-left: 10px;  /* Spacing between input and button */
+}
+
+/* Language Selector */
+.language-selector {
+    position: fixed;  /* Fixed at the bottom */
+    bottom: 20px;  /* 20px from the bottom */
+    right: 20px;  /* 20px from the right */
+    z-index: 1000;  /* Keep on top */
+}
+
+.language-selector button {
+    background-color: #6e8efb;  /* Blue background */
+    color: white;  /* White text */
+    padding: 10px 20px;  /* Padding */
+    border: none;  /* No border */
+    border-radius: 25px;  /* Rounded corners */
+    margin: 5px;  /* Spacing between buttons */
+    cursor: pointer;  /* Pointer cursor */
+}
