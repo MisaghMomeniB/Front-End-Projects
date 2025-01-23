@@ -155,3 +155,9 @@ color: #1a1a1a;
   background: url('../images/hero-bg.jpg') no-repeat center center/cover;
   color: #f4f4f4;
 }
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
