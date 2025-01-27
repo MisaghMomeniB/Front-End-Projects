@@ -29,3 +29,8 @@ header .logo {
 .nav-links li {
     margin: 0 1rem;
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
