@@ -4,3 +4,12 @@ body {
     padding: 0;
     line-height: 1.6;
 }
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
