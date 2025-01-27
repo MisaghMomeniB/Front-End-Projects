@@ -34,3 +34,9 @@ header .logo {
     text-decoration: none;
     color: #fff;
 }
+
+#hero {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 4rem 2rem;
+}
