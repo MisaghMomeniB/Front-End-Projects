@@ -59,3 +59,8 @@ form {
 form label {
     margin-top: 1rem;
 }
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
