@@ -48,3 +48,10 @@ section {
 .service {
     margin: 1rem 0;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
