@@ -40,3 +40,7 @@ header .logo {
     text-align: center;
     padding: 4rem 2rem;
 }
+
+section {
+    padding: 2rem 1rem;
+}
