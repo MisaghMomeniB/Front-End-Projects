@@ -55,3 +55,7 @@ form {
     max-width: 400px;
     margin: auto;
 }
+
+form label {
+    margin-top: 1rem;
+}
