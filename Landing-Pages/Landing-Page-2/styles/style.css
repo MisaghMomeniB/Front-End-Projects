@@ -64,3 +64,10 @@ form input, form textarea, form button {
     padding: 0.5rem;
     margin-top: 0.5rem;
 }
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
