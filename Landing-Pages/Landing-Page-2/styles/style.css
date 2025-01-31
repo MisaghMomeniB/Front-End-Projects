@@ -112,3 +112,14 @@ section {
 .service:hover {
     transform: translateY(-5px);
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
