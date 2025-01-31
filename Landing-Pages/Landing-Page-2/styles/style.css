@@ -128,3 +128,13 @@ form label {
     margin-top: 1rem;
     color: #fff;
 }
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
