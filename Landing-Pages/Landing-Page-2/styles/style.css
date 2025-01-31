@@ -92,3 +92,10 @@ header .logo {
 #hero button:hover {
     background: #ff4c42;
 }
+
+section {
+    padding: 2rem 1rem;
+    background: #1e1e1e;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
