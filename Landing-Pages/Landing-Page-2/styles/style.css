@@ -77,3 +77,14 @@ header .logo {
     margin-bottom: 2rem;
     animation: fadeInUp 2s ease-in-out 0.5s;
 }
+
+#hero button {
+    background: #ff6f61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    animation: fadeInUp 2s ease-in-out 1s;
+}
