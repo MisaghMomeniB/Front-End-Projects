@@ -34,3 +34,9 @@ header .logo {
 .nav-links li {
     margin: 0 1rem;
 }
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
