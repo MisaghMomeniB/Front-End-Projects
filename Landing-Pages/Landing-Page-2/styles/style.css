@@ -16,3 +16,9 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+header .logo {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    animation: fadeInLeft 2s ease-in-out;
+}
