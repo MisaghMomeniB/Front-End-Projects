@@ -22,3 +22,11 @@ header .logo {
     margin-left: 1rem;
     animation: fadeInLeft 2s ease-in-out;
 }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
