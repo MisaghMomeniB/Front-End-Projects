@@ -40,3 +40,8 @@ header .logo {
     color: #fff;
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
+.nav-links a:hover {
+    color: #ff6f61;
+    transform: scale(1.1);
+}
