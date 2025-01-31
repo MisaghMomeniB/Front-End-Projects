@@ -99,3 +99,12 @@ section {
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
 }
+
+.service {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
