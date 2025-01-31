@@ -65,3 +65,9 @@ header .logo {
     background: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 2s ease-in-out;
+}
