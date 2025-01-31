@@ -6,3 +6,13 @@ body {
     background: #121212;
     color: #e0e0e0;
 }
+
+header {
+    background: linear-gradient(90deg, #2a2a2a, #4b4b4b);
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
