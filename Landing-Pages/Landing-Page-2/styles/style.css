@@ -88,3 +88,7 @@ header .logo {
     transition: background 0.3s ease;
     animation: fadeInUp 2s ease-in-out 1s;
 }
+
+#hero button:hover {
+    background: #ff4c42;
+}
