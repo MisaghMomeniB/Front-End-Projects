@@ -1,73 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header .logo {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin: 0 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#hero {
-    background: #f4f4f4;
-    text-align: center;
-    padding: 4rem 2rem;
-}
-
-section {
-    padding: 2rem 1rem;
-}
-
-.service {
-    margin: 1rem 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-}
-
-form label {
-    margin-top: 1rem;
-}
-
-form input, form textarea, form button {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-form button {
-    background: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+    background: #121212;
+    color: #e0e0e0;
 }
