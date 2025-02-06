@@ -50,3 +50,7 @@ body {
     background-color: #fff;
     overflow-y: auto;
 }
+
+#content-title {
+    margin-bottom: 20px;
+}
