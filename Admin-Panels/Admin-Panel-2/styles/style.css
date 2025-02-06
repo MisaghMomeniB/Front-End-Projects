@@ -8,3 +8,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
+
+.admin-panel {
+    display: flex;
+    height: 100vh;
+}
