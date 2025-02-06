@@ -29,3 +29,12 @@ body {
 .sidebar ul {
     list-style: none;
 }
+
+.sidebar ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
