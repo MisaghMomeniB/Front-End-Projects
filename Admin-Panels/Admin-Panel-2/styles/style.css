@@ -42,3 +42,11 @@ body {
 .sidebar ul li a:hover {
     background-color: #575757;
 }
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
