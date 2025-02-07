@@ -23,3 +23,16 @@ body {
 .sidebar:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.sidebar ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 50%;
+    background-color: #e74c3c;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
