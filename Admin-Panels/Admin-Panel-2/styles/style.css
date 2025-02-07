@@ -36,3 +36,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+.sidebar ul li a:hover::before {
+    opacity: 1;
+}
