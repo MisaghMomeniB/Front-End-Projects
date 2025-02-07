@@ -40,3 +40,16 @@ body {
 .sidebar ul li a:hover::before {
     opacity: 1;
 }
+
+button,
+button:focus {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
