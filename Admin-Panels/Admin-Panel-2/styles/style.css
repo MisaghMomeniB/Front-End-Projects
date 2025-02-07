@@ -58,3 +58,15 @@ button:hover {
     background: linear-gradient(135deg, #2980b9, #3498db);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+button:active {
+    transform: scale(0.98);
+}
+
+#content-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
