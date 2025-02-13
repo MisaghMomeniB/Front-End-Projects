@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingBag, Star, TrendingUp, Trophy, Truck } from 'lucide-react';
 
@@ -64,8 +65,8 @@ function App() {
         </div>
       </section>
 
-            {/* Featured Products */}
-            <section className="py-20 bg-gray-50">
+      {/* Featured Products */}
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">Featured Collection</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -112,8 +113,38 @@ function App() {
         </div>
       </section>
 
-     {/* Footer */}
-     <footer className="bg-gray-900 text-gray-300 py-12">
+      {/* CTA Section */}
+      <section className="py-20 bg-black text-white">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-4xl font-bold mb-6">Join the Elite</h2>
+            <p className="text-xl text-gray-300 mb-8">
+              Subscribe for exclusive deals and early access to new releases
+            </p>
+            <div className="max-w-md mx-auto flex gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 px-4 py-3 rounded-lg text-black"
+              />
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-orange-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+              >
+                Subscribe
+              </motion.button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-gray-300 py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
