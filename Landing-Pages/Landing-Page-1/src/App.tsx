@@ -37,3 +37,29 @@ function App() {
           </motion.div>
         </div>
       </header>
+
+      {/* Features Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { icon: Trophy, title: "Premium Quality", desc: "Top-tier materials" },
+              { icon: Truck, title: "Fast Delivery", desc: "Free shipping worldwide" },
+              { icon: Star, title: "Pro Approved", desc: "Tested by athletes" },
+              { icon: TrendingUp, title: "Performance", desc: "Enhanced gameplay" }
+            ].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
+                className="text-center p-6"
+              >
+                <feature.icon className="w-12 h-12 mx-auto mb-4 text-orange-500" />
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-gray-600">{feature.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
