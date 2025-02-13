@@ -111,3 +111,46 @@ function App() {
           </div>
         </div>
       </section>
+
+     {/* Footer */}
+     <footer className="bg-gray-900 text-gray-300 py-12">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-xl font-bold text-white mb-4">ELITE HOOPS</h3>
+              <p className="text-sm">Premium basketball footwear for champions.</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Products</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Size Guide</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Support</h4>
+              <ul className="space-y-2">
+                <li><a href="#" className="hover:text-white transition-colors">Shipping Info</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Returns</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
+              <p className="text-sm mb-2">Email: info@elitehoops.com</p>
+              <p className="text-sm mb-2">Phone: (555) 123-4567</p>
+              <p className="text-sm">Address: 123 Court Street, Hoopsville, BL 12345</p>
+            </div>
+          </div>
+          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+            <p>&copy; 2024 Elite Hoops. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
