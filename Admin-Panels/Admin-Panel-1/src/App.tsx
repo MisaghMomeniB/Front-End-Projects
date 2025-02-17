@@ -44,7 +44,7 @@ function App() {
               {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
-          
+
           <nav className="flex-1 px-4 py-2">
             {menuItems.map((item) => (
               <button
@@ -63,6 +63,7 @@ function App() {
               </button>
             ))}
           </nav>
+
           <div className="p-4 border-t">
             <button className="w-full flex items-center gap-4 px-4 py-3 rounded-lg text-red-600 hover:bg-red-50 transition-all duration-200">
               <LogOut size={20} />
@@ -75,8 +76,8 @@ function App() {
         </div>
       </aside>
 
-        {/* Main Content */}
-        <main className="flex-1 p-8">
+      {/* Main Content */}
+      <main className="flex-1 p-8">
         <header className="bg-white rounded-lg shadow-sm p-4 mb-8">
           <div className="flex items-center justify-between">
             <button 
