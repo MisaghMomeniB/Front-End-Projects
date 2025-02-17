@@ -44,3 +44,22 @@ function App() {
               {isSidebarOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
+          
+          <nav className="flex-1 px-4 py-2">
+            {menuItems.map((item) => (
+              <button
+                key={item.id}
+                onClick={() => setActiveMenu(item.id)}
+                className={`w-full flex items-center gap-4 px-4 py-3 rounded-lg transition-all duration-200
+                  ${activeMenu === item.id 
+                    ? 'bg-indigo-50 text-indigo-600' 
+                    : 'hover:bg-gray-50 text-gray-700'}`}
+              >
+                <item.icon size={20} />
+                <span className={`transition-opacity duration-200
+                  ${isSidebarOpen ? 'opacity-100' : 'opacity-0 md:opacity-100 md:hidden'}`}>
+                  {item.label}
+                </span>
+              </button>
+            ))}
+          </nav>
