@@ -17,25 +17,25 @@ function App() {
   const [activeMenu, setActiveMenu] = useState('dashboard');
 
   const menuItems = [
-    { id: 'dashboard', icon: LayoutDashboard, label: 'داشبورد' },
-    { id: 'users', icon: Users, label: 'کاربران' },
-    { id: 'products', icon: ShoppingCart, label: 'محصولات' },
-    { id: 'analytics', icon: BarChart3, label: 'آمار' },
-    { id: 'settings', icon: Settings, label: 'تنظیمات' },
+    { id: 'dashboard', icon: LayoutDashboard, label: 'Dashboard' },
+    { id: 'users', icon: Users, label: 'Users' },
+    { id: 'products', icon: ShoppingCart, label: 'Products' },
+    { id: 'analytics', icon: BarChart3, label: 'Analytics' },
+    { id: 'settings', icon: Settings, label: 'Settings' },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 flex" dir="rtl">
+    <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
       <aside 
         className={`bg-white fixed md:static h-full shadow-lg transition-all duration-300 ease-in-out z-50
-          ${isSidebarOpen ? 'w-64 translate-x-0' : 'w-0 md:w-20 translate-x-full md:translate-x-0'}`}
+          ${isSidebarOpen ? 'w-64 translate-x-0' : 'w-0 md:w-20 -translate-x-full md:translate-x-0'}`}
       >
         <div className="flex flex-col h-full">
           <div className="p-5 flex items-center justify-between">
             <h1 className={`font-bold text-xl text-indigo-600 transition-opacity duration-200
               ${isSidebarOpen ? 'opacity-100' : 'opacity-0 md:opacity-100'}`}>
-              پنل مدیریت
+              Admin Panel
             </h1>
             <button 
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -69,7 +69,7 @@ function App() {
               <LogOut size={20} />
               <span className={`transition-opacity duration-200
                 ${isSidebarOpen ? 'opacity-100' : 'opacity-0 md:opacity-100 md:hidden'}`}>
-                خروج
+                Logout
               </span>
             </button>
           </div>
@@ -91,8 +91,8 @@ function App() {
               <div className="relative">
                 <input
                   type="text"
-                  placeholder="جستجو..."
-                  className="w-64 px-4 py-2 pr-10 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                  placeholder="Search..."
+                  className="w-64 px-4 py-2 pl-10 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200"
                 />
                 <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
               </div>
@@ -109,8 +109,8 @@ function App() {
                   className="w-10 h-10 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-medium">علی محمدی</p>
-                  <p className="text-sm text-gray-500">مدیر سیستم</p>
+                  <p className="font-medium">Alex Johnson</p>
+                  <p className="text-sm text-gray-500">System Admin</p>
                 </div>
               </div>
             </div>
@@ -119,10 +119,10 @@ function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {[
-            { title: 'کل کاربران', value: '12,361', change: '+2.5%', color: 'indigo' },
-            { title: 'درآمد ماهانه', value: '۴,۵۶۰,۰۰۰ تومان', change: '+18.2%', color: 'green' },
-            { title: 'سفارشات جدید', value: '43', change: '-12.5%', color: 'red' },
-            { title: 'بازدید امروز', value: '2,451', change: '+8.1%', color: 'blue' }
+            { title: 'Total Users', value: '12,361', change: '+2.5%', color: 'indigo' },
+            { title: 'Monthly Revenue', value: '$45,600', change: '+18.2%', color: 'green' },
+            { title: 'New Orders', value: '43', change: '-12.5%', color: 'red' },
+            { title: "Today's Visits", value: '2,451', change: '+8.1%', color: 'blue' }
           ].map((stat, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-gray-500 text-sm">{stat.title}</h3>
@@ -133,7 +133,7 @@ function App() {
         </div>
 
         <div className="bg-white rounded-lg shadow-sm p-6">
-          <h2 className="text-xl font-semibold mb-6">آخرین فعالیت‌ها</h2>
+          <h2 className="text-xl font-semibold mb-6">Recent Activities</h2>
           <div className="space-y-4">
             {[...Array(5)].map((_, index) => (
               <div key={index} className="flex items-center justify-between p-4 hover:bg-gray-50 rounded-lg transition-colors duration-200">
@@ -144,12 +144,12 @@ function App() {
                     className="w-10 h-10 rounded-full object-cover"
                   />
                   <div>
-                    <p className="font-medium">کاربر {index + 1}</p>
-                    <p className="text-sm text-gray-500">فعالیت مربوطه {index + 1}</p>
+                    <p className="font-medium">User {index + 1}</p>
+                    <p className="text-sm text-gray-500">Activity {index + 1}</p>
                   </div>
                 </div>
                 <span className="text-sm text-gray-500">
-                  {index + 1} ساعت پیش
+                  {index + 1} hour{index !== 0 ? 's' : ''} ago
                 </span>
               </div>
             ))}
