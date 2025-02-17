@@ -63,3 +63,14 @@ function App() {
               </button>
             ))}
           </nav>
+          <div className="p-4 border-t">
+            <button className="w-full flex items-center gap-4 px-4 py-3 rounded-lg text-red-600 hover:bg-red-50 transition-all duration-200">
+              <LogOut size={20} />
+              <span className={`transition-opacity duration-200
+                ${isSidebarOpen ? 'opacity-100' : 'opacity-0 md:opacity-100 md:hidden'}`}>
+                Logout
+              </span>
+            </button>
+          </div>
+        </div>
+      </aside>
