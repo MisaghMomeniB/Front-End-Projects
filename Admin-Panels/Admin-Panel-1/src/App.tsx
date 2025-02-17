@@ -74,3 +74,50 @@ function App() {
           </div>
         </div>
       </aside>
+
+        {/* Main Content */}
+        <main className="flex-1 p-8">
+        <header className="bg-white rounded-lg shadow-sm p-4 mb-8">
+          <div className="flex items-center justify-between">
+            <button 
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              className="p-2 rounded-lg hover:bg-gray-100 md:hidden"
+            >
+              <Menu size={24} />
+            </button>
+
+            <div className="flex items-center gap-6">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="w-64 px-4 py-2 pr-10 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+                />
+                <Search className="absolute left-3 top-2.5 text-gray-400" size={20} />
+              </div>
+
+              <button className="relative p-2 rounded-lg hover:bg-gray-100">
+                <Bell size={24} />
+                <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+              </button>
+
+              <div className="flex items-center gap-3">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="Profile"
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <p className="font-medium">Ali Mohammadi</p>
+                  <p className="text-sm text-gray-500">System Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </main>
+    </div>
+  );
+}
+
+export default App;
