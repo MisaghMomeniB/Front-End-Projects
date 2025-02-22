@@ -169,22 +169,22 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'سارا احمدی',
+                name: 'سارا',
                 comment: 'بهترین قهوه‌ای که تا به حال نوشیده‌ام! فضای دنج و آرام کافه عالی است.',
                 rating: 5,
-                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400'
+                // image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400'
               },
               {
-                name: 'علی محمدی',
+                name: 'علی',
                 comment: 'پرسنل بسیار حرفه‌ای و مؤدب. قهوه‌های تخصصی فوق‌العاده‌ای دارند.',
                 rating: 5,
-                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'
+                // image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'
               },
               {
-                name: 'مریم کریمی',
+                name: 'مریم',
                 comment: 'محیط بسیار تمیز و دلنشین. قهوه‌ها همیشه تازه و خوش‌عطر هستند.',
                 rating: 5,
-                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400'
+                // image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400'
               }
             ].map((review, index) => (
               <div key={index} className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
