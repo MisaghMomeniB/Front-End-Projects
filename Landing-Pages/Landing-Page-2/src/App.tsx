@@ -169,19 +169,19 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'شماره اول,
+                name: 'شماره اول,',
                 comment: 'بهترین قهوه‌ای که تا به حال نوشیده‌ام! فضای دنج و آرام کافه عالی است.',
                 rating: 5,
                 image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400'
               },
               {
-                name: 'شماره دوم,
+                name: 'شماره دوم,',
                 comment: 'پرسنل بسیار حرفه‌ای و مؤدب. قهوه‌های تخصصی فوق‌العاده‌ای دارند.',
                 rating: 5,
                 image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'
               },
               {
-                name: 'شماره سوم,
+                name: 'شماره سوم,',
                 comment: 'محیط بسیار تمیز و دلنشین. قهوه‌ها همیشه تازه و خوش‌عطر هستند.',
                 rating: 5,
                 image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400'
@@ -205,3 +205,52 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-brown-900 dark:bg-gray-950 text-white py-12">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-2xl font-bold mb-4">ارتباط با ما</h4>
+              <div className="space-y-2">
+                <p className="flex items-center gap-2">
+                  <Phone className="w-5 h-5" />
+                  ۰۲۱-۱۲۳۴۵۶۷۸
+                </p>
+                <p className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
+                  تهران، خیابان ولیعصر، کوچه بهار
+                </p>
+                <p className="flex items-center gap-2">
+                  <Instagram className="w-5 h-5" />
+                  cafe.aramesh
+                </p>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-2xl font-bold mb-4">ساعات کاری</h4>
+              <p>شنبه تا چهارشنبه: ۸ صبح تا ۱۰ شب</p>
+              <p>پنجشنبه و جمعه: ۹ صبح تا ۱۱ شب</p>
+            </div>
+            <div>
+              <h4 className="text-2xl font-bold mb-4">خبرنامه</h4>
+              <p className="mb-4">برای اطلاع از تخفیف‌ها و اخبار جدید عضو خبرنامه ما شوید</p>
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="ایمیل شما"
+                  className="bg-brown-800 dark:bg-gray-800 text-white px-4 py-2 rounded-lg flex-grow"
+                />
+                <button className="bg-brown-700 dark:bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-brown-600 dark:hover:bg-gray-600 transition-colors">
+                  عضویت
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;
