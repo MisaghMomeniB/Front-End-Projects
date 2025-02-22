@@ -103,3 +103,37 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Special Menu */}
+      <div className="py-20 bg-brown-50 dark:bg-gray-800 transition-colors">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-12 dark:text-brown-100">منوی نوشیدنی‌های ما</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'قهوه ترک',
+                price: '۴۵,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'لاته',
+                price: '۶۵,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'اسپرسو',
+                price: '۳۵,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&q=80&w=400'
+              }
+            ].map((item, index) => (
+              <div key={index} className="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
+                <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 dark:text-brown-100">{item.name}</h3>
+                  <p className="text-brown-800 dark:text-brown-200">{item.price} تومان</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
