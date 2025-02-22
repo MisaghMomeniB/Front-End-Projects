@@ -30,3 +30,24 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Features */}
+      <div className="py-20 bg-brown-50 dark:bg-gray-800 transition-colors">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="text-center">
+            <Coffee className="w-12 h-12 mx-auto mb-4 text-brown-800 dark:text-brown-300" />
+            <h3 className="text-xl font-bold mb-2 dark:text-brown-100">قهوه‌ی تازه</h3>
+            <p className="text-brown-600 dark:text-brown-400">هر روز با دانه‌های تازه برشته شده</p>
+          </div>
+          <div className="text-center">
+            <Clock className="w-12 h-12 mx-auto mb-4 text-brown-800 dark:text-brown-300" />
+            <h3 className="text-xl font-bold mb-2 dark:text-brown-100">ساعات کاری</h3>
+            <p className="text-brown-600 dark:text-brown-400">همه روزه از ۸ صبح تا ۱۰ شب</p>
+          </div>
+          <div className="text-center">
+            <MapPin className="w-12 h-12 mx-auto mb-4 text-brown-800 dark:text-brown-300" />
+            <h3 className="text-xl font-bold mb-2 dark:text-brown-100">موقعیت عالی</h3>
+            <p className="text-brown-600 dark:text-brown-400">در قلب شهر</p>
+          </div>
+        </div>
+      </div>
