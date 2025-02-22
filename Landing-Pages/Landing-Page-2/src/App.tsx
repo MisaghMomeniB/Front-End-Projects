@@ -137,3 +137,27 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Why Choose Us */}
+      <div className="py-20 dark:bg-gray-900 transition-colors">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16 dark:text-brown-100">چرا کافه‌ی آرامش؟</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center">
+              <Award className="w-16 h-16 mx-auto mb-6 text-brown-800 dark:text-brown-300" />
+              <h3 className="text-2xl font-bold mb-4 dark:text-brown-100">کیفیت برتر</h3>
+              <p className="text-brown-600 dark:text-brown-400">استفاده از مرغوب‌ترین دانه‌های قهوه و تجهیزات حرفه‌ای</p>
+            </div>
+            <div className="text-center">
+              <Leaf className="w-16 h-16 mx-auto mb-6 text-brown-800 dark:text-brown-300" />
+              <h3 className="text-2xl font-bold mb-4 dark:text-brown-100">محصول ارگانیک</h3>
+              <p className="text-brown-600 dark:text-brown-400">تهیه شده از مزارع ارگانیک با کیفیت تضمین شده</p>
+            </div>
+            <div className="text-center">
+              <CoffeeBean className="w-16 h-16 mx-auto mb-6 text-brown-800 dark:text-brown-300" />
+              <h3 className="text-2xl font-bold mb-4 dark:text-brown-100">برشته‌کاری تخصصی</h3>
+              <p className="text-brown-600 dark:text-brown-400">برشته‌کاری روزانه برای حفظ تازگی و عطر قهوه</p>
+            </div>
+          </div>
+        </div>
+      </div>
