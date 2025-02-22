@@ -51,3 +51,55 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Products Showcase */}
+      <div className="py-20 dark:bg-gray-900 transition-colors">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 dark:text-brown-100">محصولات ویژه ما</h2>
+            <p className="text-lg text-brown-600 dark:text-brown-400">بهترین دانه‌های قهوه از سراسر جهان</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: 'قهوه برزیلی',
+                description: 'عطر و طعم شکلاتی با رایحه گردو',
+                price: '۱۲۰,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1587734005433-8a2fb6a6dd52?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'قهوه اتیوپی',
+                description: 'طعم میوه‌ای با رایحه توت و مرکبات',
+                price: '۱۴۵,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'قهوه کلمبیا',
+                description: 'عطر کاراملی با پس‌زمینه بادام',
+                price: '۱۳۵,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'قهوه گواتمالا',
+                description: 'طعم متعادل با رایحه شکلات تلخ',
+                price: '۱۵۰,۰۰۰',
+                image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=400'
+              }
+            ].map((item, index) => (
+              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 dark:text-brown-100">{item.name}</h3>
+                  <p className="text-brown-600 dark:text-brown-400 mb-4">{item.description}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-brown-800 dark:text-brown-200 font-bold">{item.price} تومان</span>
+                    <button className="bg-brown-100 dark:bg-brown-700 text-brown-800 dark:text-brown-100 px-4 py-2 rounded-lg hover:bg-brown-200 dark:hover:bg-brown-600 transition-colors">
+                      افزودن به سبد
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
