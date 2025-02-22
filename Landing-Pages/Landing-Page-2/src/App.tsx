@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import { Coffee, Clock, MapPin, Phone, Instagram, Star, Award, Leaf, Coffee as CoffeeBean, Sun, Moon } from 'lucide-react';
 import { useTheme } from './ThemeContext';
 
@@ -10,7 +10,8 @@ function App() {
       {/* Theme Toggle */}
       <button
         onClick={toggleTheme}
-        className="fixed top-4 left-4 p-2 rounded-full bg-brown-100 dark:bg-brown-800 text-brown-800 dark:text-brown-100 hover:bg-brown-200 dark:hover:bg-brown-700 transition-colors z-50">
+        className="fixed top-4 left-4 p-2 rounded-full bg-brown-100 dark:bg-brown-800 text-brown-800 dark:text-brown-100 hover:bg-brown-200 dark:hover:bg-brown-700 transition-colors z-50"
+      >
         {theme === 'light' ? <Moon className="w-6 h-6" /> : <Sun className="w-6 h-6" />}
       </button>
 
