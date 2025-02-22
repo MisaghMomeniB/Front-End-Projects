@@ -161,3 +161,47 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Customer Reviews */}
+      <div className="py-20 bg-brown-50 dark:bg-gray-800 transition-colors">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center mb-16 dark:text-brown-100">نظرات مشتریان ما</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'شماره اول,
+                comment: 'بهترین قهوه‌ای که تا به حال نوشیده‌ام! فضای دنج و آرام کافه عالی است.',
+                rating: 5,
+                image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'شماره دوم,
+                comment: 'پرسنل بسیار حرفه‌ای و مؤدب. قهوه‌های تخصصی فوق‌العاده‌ای دارند.',
+                rating: 5,
+                image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'
+              },
+              {
+                name: 'شماره سوم,
+                comment: 'محیط بسیار تمیز و دلنشین. قهوه‌ها همیشه تازه و خوش‌عطر هستند.',
+                rating: 5,
+                image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=400'
+              }
+            ].map((review, index) => (
+              <div key={index} className="bg-white dark:bg-gray-700 p-6 rounded-xl shadow-lg">
+                <div className="flex items-center mb-4">
+                  <img src={review.image} alt={review.name} className="w-12 h-12 rounded-full object-cover ml-4" />
+                  <div>
+                    <h3 className="font-bold dark:text-brown-100">{review.name}</h3>
+                    <div className="flex">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <p className="text-brown-600 dark:text-brown-300">{review.comment}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
