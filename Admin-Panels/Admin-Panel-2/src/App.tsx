@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { 
   LineChart, 
   Wallet, 
@@ -50,7 +50,7 @@ function App() {
             </button>
             <div className="flex items-center gap-3 bg-gray-800 p-2 rounded-lg">
               <img
-                src=""
+                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&h=100&fit=crop"
                 alt="Admin"
                 className="w-8 h-8 rounded-full"
               />
@@ -77,15 +77,15 @@ function App() {
           ))}
         </div>
 
-                {/* Recent Activity */}
-                <section className="bg-gray-800 rounded-xl p-6">
+        {/* Recent Activity */}
+        <section className="bg-gray-800 rounded-xl p-6">
           <h3 className="text-xl font-bold mb-6">Recent Transactions</h3>
           <div className="space-y-4">
             {[
-              { user: 'Misagh', action: 'Bought BTC', amount: '0.234 BTC', value: '$8,532' },
-              { user: 'Milad', action: 'Sold ETH', amount: '4.123 ETH', value: '$7,234' },
-              { user: 'Ehsan', action: 'Bought BTC', amount: '0.112 BTC', value: '$4,121' },
-              { user: 'Karim', action: 'Sold ETH', amount: '2.345 ETH', value: '$4,032' },
+              { user: 'Sarah Chen', action: 'Bought BTC', amount: '0.234 BTC', value: '$8,532' },
+              { user: 'Michael Smith', action: 'Sold ETH', amount: '4.123 ETH', value: '$7,234' },
+              { user: 'David Kim', action: 'Bought BTC', amount: '0.112 BTC', value: '$4,121' },
+              { user: 'Emma Wilson', action: 'Sold ETH', amount: '2.345 ETH', value: '$4,032' },
             ].map((tx, index) => (
               <div key={index} className="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
                 <div className="flex items-center gap-4">
