@@ -76,3 +76,36 @@ function App() {
             </div>
           ))}
         </div>
+
+                {/* Recent Activity */}
+                <section className="bg-gray-800 rounded-xl p-6">
+          <h3 className="text-xl font-bold mb-6">Recent Transactions</h3>
+          <div className="space-y-4">
+            {[
+              { user: 'Misagh', action: 'Bought BTC', amount: '0.234 BTC', value: '$8,532' },
+              { user: 'Milad', action: 'Sold ETH', amount: '4.123 ETH', value: '$7,234' },
+              { user: 'Ehsan', action: 'Bought BTC', amount: '0.112 BTC', value: '$4,121' },
+              { user: 'Karim', action: 'Sold ETH', amount: '2.345 ETH', value: '$4,032' },
+            ].map((tx, index) => (
+              <div key={index} className="flex items-center justify-between p-4 bg-gray-700 rounded-lg">
+                <div className="flex items-center gap-4">
+                  <User className="w-10 h-10 p-2 bg-gray-600 rounded-full" />
+                  <div>
+                    <p className="font-medium">{tx.user}</p>
+                    <p className="text-sm text-gray-400">{tx.action}</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <p className="font-medium">{tx.amount}</p>
+                  <p className="text-sm text-gray-400">{tx.value}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default App;
