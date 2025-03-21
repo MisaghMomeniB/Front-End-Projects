@@ -38,3 +38,23 @@ function App() {
           ))}
         </nav>
       </aside>
+
+      {/* Main Content */}
+      <main className="flex-1 p-8">
+        {/* Header */}
+        <header className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl font-bold">Dashboard Overview</h2>
+          <div className="flex items-center gap-4">
+            <button className="p-2 rounded-lg hover:bg-gray-800">
+              <Bell className="w-6 h-6" />
+            </button>
+            <div className="flex items-center gap-3 bg-gray-800 p-2 rounded-lg">
+              <img
+                src=""
+                alt="Admin"
+                className="w-8 h-8 rounded-full"
+              />
+              <span>Admin User</span>
+            </div>
+          </div>
+        </header>
