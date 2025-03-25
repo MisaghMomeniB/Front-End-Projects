@@ -3,7 +3,7 @@ import {
   LineChart,
   Wallet,
   Users,
-  ArrowUpDown, 
+  ArrowUpDown,
   Bell,
   User,
   Settings,
