@@ -3,11 +3,221 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
+    <title>Modern Registration Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .animated-bg {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      .glass-card {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+      }
+
+      .glass-button {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .glass-button:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-field {
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .input-field:focus {
+        background-color: rgba(255, 255, 255, 0.25);
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+      }
+    </style>
   </head>
-  <body>
-    
+  <body class="animated-bg min-h-screen flex items-center justify-center p-4">
+    <div class="glass-card w-full max-w-md p-8 shadow-2xl">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl font-bold text-white mb-2">Create Account</h1>
+        <p class="text-white/80">Join us today for exclusive features</p>
+      </div>
+
+      <form class="space-y-6">
+        <div class="space-y-4">
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-medium text-white/80 mb-1"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="input-field w-full px-4 py-3 rounded-lg text-white placeholder-white/60 focus:placeholder-transparent"
+              placeholder="John Doe"
+            />
+          </div>
+
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-white/80 mb-1"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="input-field w-full px-4 py-3 rounded-lg text-white placeholder-white/60 focus:placeholder-transparent"
+              placeholder="john@example.com"
+            />
+          </div>
+
+          <div>
+            <label
+              for="password"
+              class="block text-sm font-medium text-white/80 mb-1"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="input-field w-full px-4 py-3 rounded-lg text-white placeholder-white/60 focus:placeholder-transparent"
+              placeholder="••••••••"
+            />
+          </div>
+
+          <div>
+            <label
+              for="confirm-password"
+              class="block text-sm font-medium text-white/80 mb-1"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              class="input-field w-full px-4 py-3 rounded-lg text-white placeholder-white/60 focus:placeholder-transparent"
+              placeholder="••••••••"
+            />
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <input
+            id="terms"
+            type="checkbox"
+            class="h-4 w-4 rounded border-white/30 bg-white/10 focus:ring-white/50"
+          />
+          <label for="terms" class="ml-2 block text-sm text-white/80">
+            I agree to the
+            <a href="#" class="text-white font-medium hover:underline"
+              >Terms & Conditions</a
+            >
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          class="glass-button w-full py-3 px-4 rounded-lg text-white font-semibold shadow-lg"
+        >
+          Sign Up
+        </button>
+
+        <div class="text-center text-white/80 text-sm">
+          Already have an account?
+          <a href="#" class="text-white font-medium hover:underline">Log in</a>
+        </div>
+      </form>
+
+      <div class="mt-8">
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-white/20"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="px-2 bg-transparent text-white/80"
+              >Or continue with</span
+            >
+          </div>
+        </div>
+
+        <div class="mt-6 grid grid-cols-3 gap-3">
+          <a
+            href="#"
+            class="glass-button flex items-center justify-center py-2 px-4 rounded-lg"
+          >
+            <svg
+              class="w-5 h-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 0C4.477 0 0 4.477 0 10c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0110 4.844c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.14 18.163 20 14.418 20 10c0-5.523-4.477-10-10-10z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="glass-button flex items-center justify-center py-2 px-4 rounded-lg"
+          >
+            <svg
+              class="w-5 h-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 0C4.477 0 0 4.477 0 10c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm6.25 15.625h-2.5v-5h-1.25v5h-2.5v-5h-1.25v5h-2.5v-7.5h10v7.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="glass-button flex items-center justify-center py-2 px-4 rounded-lg"
+          >
+            <svg
+              class="w-5 h-5 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              aria-hidden="true"
+            >
+              <path
+                d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
