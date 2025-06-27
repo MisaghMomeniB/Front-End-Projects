@@ -5,61 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Registration Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
-      .animated-bg {
-        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-      }
-
-      .glass-card {
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.15);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-      }
-
-      .glass-button {
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.25);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-      }
-
-      .glass-button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      }
-
-      .input-field {
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        transition: all 0.3s ease;
-      }
-
-      .input-field:focus {
-        background-color: rgba(255, 255, 255, 0.25);
-        outline: none;
-        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
-      }
-    </style>
   </head>
   <body class="animated-bg min-h-screen flex items-center justify-center p-4">
     <div class="glass-card w-full max-w-md p-8 shadow-2xl">
