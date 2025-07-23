@@ -20,8 +20,9 @@
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 12px;
+  border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.125);
+  transition: box-shadow 0.3s ease;
 }
 
 .glass-button {
@@ -35,7 +36,7 @@
 .glass-button:hover {
   background-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
 }
 
 .input-field {
@@ -43,11 +44,16 @@
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
   transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .input-field:focus {
   background-color: rgba(255, 255, 255, 0.25);
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
 }
