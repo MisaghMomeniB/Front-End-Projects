@@ -1,3 +1,15 @@
+/* Custom animation delays using utility classes */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-2000 {
+  animation-delay: 2s;
+}
+.delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Gradient animation (not used but available) */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -9,23 +21,23 @@
     background-position: 0% 50%;
   }
 }
-
 .animate-gradient {
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
 
+/* Reusable glassmorphism styles */
 .glass-effect {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .input-glass {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
@@ -33,4 +45,32 @@
   outline: none;
   border-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Circles for background blur animation */
+.circle {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(3rem);
+  opacity: 0.2;
+  width: 16rem;
+  height: 16rem;
+}
+.circle-purple {
+  top: 0;
+  left: 0;
+  background-color: #7e22ce;
+}
+.circle-blue {
+  bottom: 0;
+  right: 0;
+  background-color: #2563eb;
+}
+.circle-indigo {
+  top: 33%;
+  right: 25%;
+  width: 24rem;
+  height: 24rem;
+  background-color: #4f46e5;
+  opacity: 0.1;
 }
